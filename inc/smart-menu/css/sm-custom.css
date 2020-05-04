@@ -1,0 +1,363 @@
+.sm-custom a,.sm-custom a:hover,.sm-custom a:focus,.sm-custom a:active {
+	padding: 13px 20px;
+/* make room for the toggle button (sub indicator) */
+	padding-right: 58px;
+	color: #fff;
+	font-size: inherit;
+	font-weight: 500;
+	line-height: 17px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.sm-custom .current-menu-item a {
+	color: #19bd9b;
+}
+
+.sm-custom a.disabled {
+	color: #bbb;
+}
+
+.sm-custom a span.sub-arrow {
+	position: absolute;
+	top: 50%;
+	margin-top: -17px;
+	left: auto;
+	right: 4px;
+	width: 34px;
+	height: 34px;
+	overflow: hidden;
+	font: bold 16px/34px monospace !important;
+	text-align: center;
+	text-shadow: none;
+	background: rgba(255,255,255,0.5);
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.sm-custom a.highlighted span.sub-arrow:before {
+	display: block;
+	content: '-';
+}
+
+.sm-custom > li:first-child > a,.sm-custom > li:first-child > :not(ul) a {
+	-webkit-border-radius: 5px 5px 0 0;
+	-moz-border-radius: 5px 5px 0 0;
+	-ms-border-radius: 5px 5px 0 0;
+	-o-border-radius: 5px 5px 0 0;
+	border-radius: 5px 5px 0 0;
+}
+
+.sm-custom > li:last-child > a,.sm-custom > li:last-child > :not(ul) a,.sm-custom > li:last-child > ul,.sm-custom > li:last-child > ul > li:last-child > a,.sm-custom > li:last-child > ul > li:last-child > :not(ul) a,.sm-custom > li:last-child > ul > li:last-child > ul,.sm-custom > li:last-child > ul > li:last-child > ul > li:last-child > a,.sm-custom > li:last-child > ul > li:last-child > ul > li:last-child > :not(ul) a,.sm-custom > li:last-child > ul > li:last-child > ul > li:last-child > ul,.sm-custom > li:last-child > ul > li:last-child > ul > li:last-child > ul > li:last-child > a,.sm-custom > li:last-child > ul > li:last-child > ul > li:last-child > ul > li:last-child > :not(ul) a,.sm-custom > li:last-child > ul > li:last-child > ul > li:last-child > ul > li:last-child > ul,.sm-custom > li:last-child > ul > li:last-child > ul > li:last-child > ul > li:last-child > ul > li:last-child > a,.sm-custom > li:last-child > ul > li:last-child > ul > li:last-child > ul > li:last-child > ul > li:last-child > :not(ul) a,.sm-custom > li:last-child > ul > li:last-child > ul > li:last-child > ul > li:last-child > ul > li:last-child > ul {
+	-webkit-border-radius: 0 0 5px 5px;
+	-moz-border-radius: 0 0 5px 5px;
+	-ms-border-radius: 0 0 5px 5px;
+	-o-border-radius: 0 0 5px 5px;
+	border-radius: 0 0 5px 5px;
+}
+
+.sm-custom > li:last-child > a.highlighted,.sm-custom > li:last-child > :not(ul) a.highlighted,.sm-custom > li:last-child > ul > li:last-child > a.highlighted,.sm-custom > li:last-child > ul > li:last-child > :not(ul) a.highlighted,.sm-custom > li:last-child > ul > li:last-child > ul > li:last-child > a.highlighted,.sm-custom > li:last-child > ul > li:last-child > ul > li:last-child > :not(ul) a.highlighted,.sm-custom > li:last-child > ul > li:last-child > ul > li:last-child > ul > li:last-child > a.highlighted,.sm-custom > li:last-child > ul > li:last-child > ul > li:last-child > ul > li:last-child > :not(ul) a.highlighted,.sm-custom > li:last-child > ul > li:last-child > ul > li:last-child > ul > li:last-child > ul > li:last-child > a.highlighted,.sm-custom > li:last-child > ul > li:last-child > ul > li:last-child > ul > li:last-child > ul > li:last-child > :not(ul) a.highlighted {
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	-ms-border-radius: 0;
+	-o-border-radius: 0;
+	border-radius: 0;
+}
+
+.sm-custom li {
+	border-top: 1px solid rgba(0,0,0,0.05);
+}
+
+.sm-custom > li:first-child {
+	border-top: 0;
+}
+
+.sm-custom ul {
+	background: rgba(162,162,162,0.1);
+}
+
+.sm-custom ul a,.sm-custom ul a:hover,.sm-custom ul a:focus,.sm-custom ul a:active {
+	font-size: 14px;
+	border-left: 8px solid transparent;
+}
+
+.sm-custom ul ul a,.sm-custom ul ul a:hover,.sm-custom ul ul a:focus,.sm-custom ul ul a:active {
+	border-left: 16px solid transparent;
+}
+
+.sm-custom ul ul ul a,.sm-custom ul ul ul a:hover,.sm-custom ul ul ul a:focus,.sm-custom ul ul ul a:active {
+	border-left: 24px solid transparent;
+}
+
+.sm-custom ul ul ul ul a,.sm-custom ul ul ul ul a:hover,.sm-custom ul ul ul ul a:focus,.sm-custom ul ul ul ul a:active {
+	border-left: 32px solid transparent;
+}
+
+.sm-custom ul ul ul ul ul a,.sm-custom ul ul ul ul ul a:hover,.sm-custom ul ul ul ul ul a:focus,.sm-custom ul ul ul ul ul a:active {
+	border-left: 40px solid transparent;
+}
+
+@media (min-width: 768px) {
+	/* Switch to desktop layout
+	  -----------------------------------------------
+	     These transform the menu tree from
+	     collapsible to desktop (navbar + dropdowns)
+	  -----------------------------------------------*/
+	/* start... (it's not recommended editing these rules) */
+	.sm-custom ul {
+		position: absolute;
+		width: 12em;
+		background: #eceeef;
+	}
+
+	.sm-custom li {
+		display: inline-block;
+	}
+
+	.sm-custom > li > ul > li {
+		display: block;
+	}
+
+	.sm-custom.sm-rtl li {
+		float: right;
+	}
+
+	.sm-custom ul li,.sm-custom.sm-rtl ul li,.sm-custom.sm-vertical li {
+		float: none;
+	}
+
+	.sm-custom a {
+		white-space: nowrap;
+	}
+
+	.sm-custom ul a,.sm-custom.sm-vertical a {
+		white-space: normal;
+	}
+
+	.sm-custom .sm-nowrap > li > a,.sm-custom .sm-nowrap > li > :not(ul) a {
+		white-space: nowrap;
+	}
+
+	/* ...end */
+	.sm-custom {
+		/* padding: 0 10px; */
+	}
+
+	.sm-custom a,.sm-custom a:hover,.sm-custom a:focus,.sm-custom a:active,.sm-custom a.highlighted {
+		padding: 10px;
+		-webkit-border-radius: 0 !important;
+		-moz-border-radius: 0 !important;
+		-ms-border-radius: 0 !important;
+		-o-border-radius: 0 !important;
+		border-radius: 0 !important;
+	}
+
+	.sm-custom a:hover,.sm-custom a:focus,.sm-custom a:active,.sm-custom a.highlighted {
+		color: #fff;
+		opacity: .6;
+	}
+
+	.sm-custom a.current {
+		color: #fff;
+		opacity: .6;
+	}
+
+	.sm-custom a.disabled {
+		color: #bbb;
+	}
+
+	.sm-custom a.has-submenu {
+		padding-right: 24px;
+	}
+
+	.sm-custom a span.sub-arrow {
+		top: auto;
+		margin-top: 8px;
+		right: 10px;
+		width: 0;
+		height: 0;
+		border-width: 4px;
+		border-style: solid dashed dashed;
+		border-color: #656565 transparent transparent;
+		background: transparent;
+		-webkit-border-radius: 0;
+		-moz-border-radius: 0;
+		-ms-border-radius: 0;
+		-o-border-radius: 0;
+		border-radius: 0;
+	}
+
+	.sm-custom a.highlighted span.sub-arrow:before {
+		display: none;
+	}
+
+	.sm-custom li {
+		border-top: 0;
+	}
+
+	.sm-custom ul a,.sm-custom ul a:hover,.sm-custom ul a:focus,.sm-custom ul a:active,.sm-custom ul a.highlighted {
+		border: 0 !important;
+		padding: 10px 20px;
+		color: #2c3644;
+	}
+
+	.sm-custom ul a:hover,.sm-custom ul a:focus,.sm-custom ul a:active,.sm-custom ul a.highlighted {
+		background: transparent;
+		color: #fff;
+		opacity: .6;
+	}
+
+	.sm-custom ul a.current {
+		color: #fff;
+		opacity: .6;
+	}
+
+	.sm-custom ul a.disabled {
+		background: #fff;
+		color: #ccc;
+	}
+
+	.sm-custom ul a.has-submenu {
+		padding-right: 20px;
+	}
+
+	.sm-custom ul a span.sub-arrow {
+		right: 5px;
+		top: 50%;
+		margin-top: -5px;
+		border-width: 5px;
+		border-style: dashed dashed dashed solid;
+		border-color: transparent transparent transparent #555;
+	}
+
+	.sm-custom span.scroll-up,.sm-custom span.scroll-down {
+		position: absolute;
+		display: none;
+		visibility: hidden;
+		overflow: hidden;
+		background: #fff;
+		height: 20px;
+	}
+
+	.sm-custom span.scroll-up:hover,.sm-custom span.scroll-down:hover {
+		background: #eee;
+	}
+
+	.sm-custom span.scroll-up:hover span.scroll-up-arrow,.sm-custom span.scroll-up:hover span.scroll-down-arrow {
+		border-color: transparent transparent #d23600;
+	}
+
+	.sm-custom span.scroll-down:hover span.scroll-down-arrow {
+		border-color: #d23600 transparent transparent;
+	}
+
+	.sm-custom span.scroll-up-arrow,.sm-custom span.scroll-down-arrow {
+		position: absolute;
+		top: 0;
+		left: 50%;
+		margin-left: -6px;
+		width: 0;
+		height: 0;
+		overflow: hidden;
+		border-width: 6px;
+		border-style: dashed dashed solid;
+		border-color: transparent transparent #555;
+	}
+
+	.sm-custom span.scroll-down-arrow {
+		top: 8px;
+		border-style: solid dashed dashed;
+		border-color: #555 transparent transparent;
+	}
+
+	.sm-custom.sm-rtl a.has-submenu {
+		padding-right: 12px;
+		padding-left: 24px;
+	}
+
+	.sm-custom.sm-rtl a span.sub-arrow {
+		right: auto;
+		left: 12px;
+	}
+
+	.sm-custom.sm-rtl.sm-vertical a.has-submenu {
+		padding: 10px 20px;
+	}
+
+	.sm-custom.sm-rtl.sm-vertical a span.sub-arrow {
+		right: auto;
+		left: 8px;
+		border-style: dashed solid dashed dashed;
+		border-color: transparent #555 transparent transparent;
+	}
+
+	.sm-custom.sm-rtl > li > ul:before {
+		left: auto;
+		right: 30px;
+	}
+
+	.sm-custom.sm-rtl > li > ul:after {
+		left: auto;
+		right: 31px;
+	}
+
+	.sm-custom.sm-rtl ul a.has-submenu {
+		padding: 10px 20px !important;
+	}
+
+	.sm-custom.sm-rtl ul a span.sub-arrow {
+		right: auto;
+		left: 8px;
+		border-style: dashed solid dashed dashed;
+		border-color: transparent #555 transparent transparent;
+	}
+
+	.sm-custom.sm-vertical {
+		padding: 10px 0;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		-ms-border-radius: 5px;
+		-o-border-radius: 5px;
+		border-radius: 5px;
+	}
+
+	.sm-custom.sm-vertical a {
+		padding: 10px 20px;
+	}
+
+	.sm-custom.sm-vertical a:hover,.sm-custom.sm-vertical a:focus,.sm-custom.sm-vertical a:active,.sm-custom.sm-vertical a.highlighted {
+		background: #fff;
+	}
+
+	.sm-custom.sm-vertical a.disabled {
+		background: #eee;
+	}
+
+	.sm-custom.sm-vertical a span.sub-arrow {
+		right: 8px;
+		top: 50%;
+		margin-top: -5px;
+		border-width: 5px;
+		border-style: dashed dashed dashed solid;
+		border-color: transparent transparent transparent #555;
+	}
+
+	.sm-custom.sm-vertical > li > ul:before,.sm-custom.sm-vertical > li > ul:after {
+		display: none;
+	}
+
+	.sm-custom.sm-vertical ul a {
+		padding: 10px 20px;
+	}
+
+	.sm-custom.sm-vertical ul a:hover,.sm-custom.sm-vertical ul a:focus,.sm-custom.sm-vertical ul a:active,.sm-custom.sm-vertical ul a.highlighted {
+		background: #eee;
+	}
+
+	.sm-custom.sm-vertical ul a.disabled {
+		background: #fff;
+	}
+}

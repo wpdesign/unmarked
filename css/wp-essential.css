@@ -1,0 +1,476 @@
+/* Warning ! 
+* This file contain the very essential fixes for WordPress and Bootstrap. Some are to keep
+* the theme check happy and others to maintain consistency across the site and 
+* prevent from layout breaking that you might not want to edit. 
+* But of course you are allowed to edit it in your need.
+*
+* We separated this CSS to maintain consistency with any other CSS design you 
+* will integrate with this theme.
+-------------------------------------------------*/
+
+body {
+	word-break: break-word;
+}
+
+
+/* Some nice typographical defaults. 
+* Credit: http://www.newnet-soft.com/blog/csstypography
+-------------------------------------------------*/
+
+p {
+	-ms-word-break: break-all;
+	-ms-word-wrap: break-all;
+	word-break: break-word;
+	word-break: break-word;
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	hyphens: auto;
+	-webkit-hyphenate-before: 2;
+	-webkit-hyphenate-after: 3;
+	hyphenate-lines: 3;
+	-webkit-font-feature-settings: liga, dlig;
+	-moz-font-feature-settings: "liga=1,dlig=1";
+	-ms-font-feature-settings: liga, dlig;
+	-o-font-feature-settings: liga, dlig;
+	font-feature-settings: liga, dlig;
+}
+
+figure, img, .img-thumbnail {
+	max-width: 100%;
+	height: auto;
+	padding: 0;
+	border: 0;
+	border-radius: 0;
+}
+
+input, select {
+	max-width: 100%;
+}
+
+
+/* Remove this if you have a block-quote and cite style
+-------------------------------------------------*/
+
+blockquote {
+	background: #f9f9f9;
+	border-left: 10px solid #eceeef;
+	margin: 1.5em 10px;
+	padding: .5em 10px;
+	quotes: "\201C""\201D""\2018""\2019";
+}
+
+blockquote:before {
+	color: #ccc;
+	content: open-quote;
+	font-size: 4em;
+	line-height: .1em;
+	margin-right: .25em;
+	vertical-align: -.4em;
+}
+
+blockquote p {
+	display: inline;
+}
+
+blockquote cite {
+	color: #818a91;
+	font-size: 14px;
+	display: block;
+	margin-top: 5px;
+}
+
+blockquote cite:before {
+	content: "\2014 \2009";
+}
+
+cite {
+	color: #818a91;
+	font-size: 14px;
+	padding-left: 5px;
+}
+
+q {
+	quotes: "â€œ" "â€" "â€˜" "â€™";
+}
+
+q:before {
+	content: open-quote;
+}
+
+q:after {
+	content: close-quote;
+}
+
+
+/* Container
+-------------------------------------------------------	*/
+
+.container-fluid {
+	max-width: 1200px;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+
+/* WordPress specific style
+-------------------------------------------------*/
+
+.sticky {
+	background-color: #ebeef0;
+	padding: 14px 18px;
+}
+
+.bypostauthor {}
+
+.gallery-icon img {
+	margin-bottom: 0;
+}
+
+.skip-link {
+	z-index: 1000;
+	position: fixed;
+	top: 0;
+	right: 0;
+}
+
+.cat-links, .comments-link, .edit-link {
+	display: inline-block;
+}
+
+.cat-links {
+	padding-right: 20px;
+}
+
+.edit-link {
+	padding-top: 10px;
+}
+
+.hentry {
+	/*padding-bottom: 1rem;*/
+}
+
+.nav-previous {
+	float: left;
+}
+
+.nav-next {
+	float: right;
+}
+
+button {
+	cursor: pointer;
+}
+
+.breadcrumbs {
+    padding-bottom: .5rem;
+}
+
+
+/* Responsive Navigation Styles
+-------------------------------------------------------	*/
+
+@media (min-width: 768px) {
+	#site-navigation {
+		float: right;
+		display: table !important;
+		width: 100%;
+	}
+	#unmarkedNav {
+		float: right;
+	}
+}
+
+@media (max-width: 767px) {
+	.navbar-header {
+		padding-top: 7px;
+		padding-bottom: 7px;
+		margin-bottom: 38px;
+		position: absolute;
+		top: -53px;
+		right: 5px;
+	}
+	.navbar-text {
+		float: left;
+		font-size: 1.2rem;
+		line-height: 1.2;
+	}
+	.navbar-toggler {
+		padding: 0;
+		font-size: 1.4rem;
+		border: 0;
+		float: right;
+	}
+	.navbar-toggler:focus, .navbar-toggler:hover {
+		outline: none;
+	}
+	#site-navigation {
+		padding-bottom: 5px;
+		padding-top: 5px;
+		background: transparent;
+		margin-left: -15px;
+		margin-right: -15px;
+	}
+	.sm-custom a span.sub-arrow {
+		background: transparent;
+		border-radius: 0;
+	}
+	.navbar {
+		padding: .5rem 0;
+	}
+}
+
+
+/* Content Fixes
+-------------------------------------------------------	*/
+
+.entry-meta {
+    font-size: 14px;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+}
+
+.archive-header .entry-meta {
+    margin-bottom: 0;
+}
+
+.entry-meta span {
+	margin-bottom: .5rem;
+}
+
+.entry-content, .entry-content p {
+	overflow: hidden;
+	font-size: 20px;
+}
+
+.content-area figure, .content-area img {
+	margin-bottom: 1rem;
+}
+
+.navigation .screen-reader-text {
+	margin-bottom: .5rem;
+	font-size: inherit;
+}
+
+
+/* Widget Fixes
+-------------------------------------------------------	*/
+
+.widget ul {
+	padding: 0;
+	margin: 0;
+}
+
+.widget ul li {
+	list-style: none;
+	padding-bottom: .5rem;
+	padding-bottom: .5rem;
+}
+
+#wp-calendar caption {
+	caption-side: inherit;
+	padding-top: 0;
+}
+
+
+/* You may not need comment section if not developing 
+* something blog type but keep this style to maintain 
+* consistency
+-------------------------------------------------------	*/
+
+#comments {
+	margin-top: 2.2rem;
+}
+
+.comments-title {
+    margin-bottom: 1.5rem;
+    font-size: 20px;
+    padding-bottom: 1rem;
+    border-bottom: 0;
+    background: rgba(0, 147, 204, .1);
+    padding: 13px 20px;
+    cursor: pointer;
+}
+
+#comments p {
+	margin-bottom: 0;
+}
+
+#comments .logged-in-as {
+	font-size: 14px;
+}
+
+.comment-metadata {
+	display: none;
+}
+
+.comment-reply-title {
+    margin-bottom: .5rem;
+    margin-top: 1rem;
+    font-size: 20px;
+}
+
+.comment-content {
+	padding-left: 37px;
+}
+
+.comment .reply {
+	font-size: 14px;
+	padding-left: 37px;
+}
+
+ol.comment-list {
+	list-style: none;
+	margin: 0 0 1em;
+	padding: 0;
+	text-indent: 0;
+	padding-left: 7px;
+}
+
+ol.comment-list .children li.comment {
+	padding-bottom: 0;
+	padding-top: 0;
+}
+
+ol.comment-list li.comment {
+	list-style: none;
+	margin-bottom: 16px;
+}
+
+ol.children li, ol.children ol {
+	padding-left: 0;
+}
+
+.comment .vcard .fn {
+	text-transform: uppercase;
+	font-size: 14px;
+}
+
+.comment .vcard .avatar {
+	position: absolute;
+	left: -7px;
+	top: -7px;
+	max-width: 48px;
+	border-radius: 50%;
+}
+
+.comment .comment-meta {
+	font-size: 12px;
+	padding-left: 38px;
+}
+
+.comment-body {
+	padding: 10px;
+	background: #f9f9f9;
+	position: relative;
+}
+
+ol.children .comment-body {
+	background: rgba(0, 147, 204, .1)!important;
+	border-color: rgba(0, 119, 170, .2);
+}
+
+ol.comment-list li.comment ul {
+	margin: 0 0 1em 2em;
+}
+
+ol.comment-list li.comment .children {
+	list-style: none;
+	text-indent: 0;
+}
+
+ol.comment-list .children li.comment article {
+	margin-top: 16px;
+}
+
+#comments input::-webkit-input-placeholder {
+	font-size: 14px;
+	color: #585858;
+}
+
+#comments input::-moz-placeholder {
+	font-size: 14px;
+	color: #585858;
+}
+
+#comments input:-ms-input-placeholder {
+	font-size: 14px;
+	color: #585858;
+}
+
+#comments input:-moz-placeholder {
+	font-size: 14px;
+	color: #585858;
+}
+
+
+/* Bootstrap Fixes
+-------------------------------------------------------	*/
+
+.page-item.active .page-link, .page-item.active .page-link:focus, .page-item.active .page-link:hover {
+	background-color: #1e5491;
+	border-color: #1e5491;
+}
+
+.page-link {
+	color: #3d596d;
+	border-radius: 0 !important;
+}
+
+.breadcrumb {
+	padding: 0;
+	background-color: transparent;
+	border-radius: 0;
+	font-size: 14px;
+	font-size: 0.875rem;
+}
+
+.m-y-1 {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+
+input[type="submit"] {
+	cursor: pointer;
+}
+
+
+/* Responsive Styles
+-------------------------------------------------------	*/
+
+@media (min-width: 768px) {
+	#masthead {
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+	.entry-content .alignleft, .entry-content img.alignleft {
+		margin-right: 1rem;
+		display: inline;
+		float: left;
+	}
+	.entry-content .alignright, .entry-content img.alignright {
+		margin-left: 1rem;
+		display: inline;
+		float: right;
+	}
+	.entry-content .aligncenter, .entry-content img.aligncenter {
+		margin-right: auto;
+		margin-left: auto;
+		display: block;
+		clear: both;
+	}
+}
+
+@media (max-width: 767px) {
+	.navbar-brand {
+		padding-top: .7rem;
+		padding-bottom: .7rem;
+		display: block;
+		text-align: left;
+	}
+	.entry-content .alignleft, .entry-content img.alignleft, .entry-content .alignright, .entry-content img.alignright, .entry-content .aligncenter, .entry-content img.aligncenter {
+		float: none;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}

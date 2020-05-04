@@ -1,0 +1,6 @@
+/* This theme support translation. If you want to translate the theme in your 
+language just upload the language files. Here's a tutorial about how to create translation file
+https://www.smashingmagazine.com/2011/12/internationalizing-localizing-wordpress-theme/#language-files
+
+Happy Developing !
+-------------------------------------------------*/

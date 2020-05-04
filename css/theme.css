@@ -1,0 +1,1108 @@
+/* Basic styles
+-------------------------------------------------*/
+
+body {
+	font-size: 16px;
+	font-family: Roboto;
+	line-height: 1.6;
+	color: #24292e;
+	color: #595959;
+    background-color: #fafcfd;
+    background: -webkit-linear-gradient(top, #dcebf1 0%, #fafcfd 30%);
+    background: -moz-linear-gradient(top, #dcebf1 0%, #fafcfd 30%);
+    background: -o-linear-gradient(top, #dcebf1 0%, #fafcfd 30%);
+    background: -ms-linear-gradient(top, #dcebf1 0%, #fafcfd 30%);
+    background: linear-gradient(to bottom, #dcebf1 0%, #fafcfd 30%);
+}
+
+*:hover {
+	-webkit-transition: all 0.20s;
+	-o-transition: all 0.20s;
+	transition: all 0.20s;
+}
+
+a {
+	color: #1e5491;
+}
+
+a:hover, a:focus, .content-area a:visited:hover {
+	text-decoration: none;
+}
+
+
+/* Heading Styles
+-------------------------------------------------*/
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+}
+
+h1, h2, .h1, .h2 {
+	font-weight: 700;
+	color: #000;
+	color: #24292e;
+	margin-top: 24px;
+	margin-bottom: 16px;
+	margin-top: 1.5rem;
+	margin-bottom: 1rem;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6 {
+	margin-top: 1.5rem;
+	margin-bottom: 1rem;
+	color: #24292e;
+}
+
+h1, .h1 {
+	/*font-size: 3rem;*/
+}
+
+h2, .h2 {
+    font-size: 1.7rem;
+    margin-top: 1.7rem;
+    margin-bottom: .7rem;
+    line-height: 1.4;
+}
+
+h3, .h3 {
+    color: #24292e;
+	font-size: 24px;
+    margin-top: 1.7rem;
+    margin-bottom: .7rem;
+	line-height: 1.4;
+
+}
+
+h4, .h4 {
+	font-size: 1.143rem;
+	color: #24292e;
+	margin-top: 1.7rem;
+    margin-bottom: .7rem;
+}
+
+
+/* WordPress specific style
+-------------------------------------------------*/
+
+.gallery-caption, .wp-caption-text {
+	font-size: 14px;
+	color: #818a91;
+	line-height: 1.4;
+	margin-top: -.8rem;
+}
+
+.wrapper #wrapper-sticky {
+	border-bottom: 1px solid #818a91;
+}
+
+.posted-on, .byline, .comments-link {
+	display: inline-block;
+	padding-right: 20px;
+}
+
+.posted-on i, .byline i, .entry-meta .comments-link i {
+	color: #2f2f2f;
+	padding-right: 2px;
+	font-size: 13px;
+}
+
+.posted-on a, .byline a, .entry-meta .comments-link a {
+	color: #2f2f2f;
+}
+
+.entry-footer i {
+	font-size: 14px;
+}
+
+.entry-footer a {
+	color: #292b2c;
+	font-size: 14px;
+}
+
+.unmarked-read-more-link {
+	display: block;
+	margin-top: 10px;
+}
+
+.blog .hentry, .archive .hentry {
+	border-bottom: 1px solid #eaecef;
+}
+
+.blog .hentry:last-child, .archive .hentry:last-child {
+    border-bottom: 0;
+}
+
+.single-post .entry-content {
+    border-bottom: 1px solid #eaecef;
+}
+
+ol {
+	list-style: decimal;
+}
+
+ol>li>ol>li {
+	padding-top: 7px;
+	padding-bottom: 7px;
+	list-style: lower-roman;
+}
+
+hr {
+	margin-top: 1.3rem;
+	margin-bottom: 1rem;
+}
+
+.error {
+	color: red;
+	font-size: 14px;
+}
+
+
+/* Navigation Styles
+-------------------------------------------------------	*/
+
+#masthead {
+    background: #1e5491;
+    background: #1e5491;
+}
+
+#wrapper-navbar .navbar {
+    border-radius: 0;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.site-logo {
+	padding-top: .25rem;
+}
+
+.navbar-brand {
+	margin: 0;
+	float: none;
+}
+
+.site-title {
+	font-size: 2.143rem;
+	line-height: 1;
+	color: #fff;
+	font-weight: 700;
+}
+
+.site-tagline {
+	line-height: 1;
+	color: #2e4453;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+span.sub-arrow {
+    display: none !important;
+}
+
+
+/* Container
+-------------------------------------------------------	*/
+
+.wrapper {
+  	padding-top: 2rem;  
+}
+
+
+/* Content
+-------------------------------------------------------	*/
+
+.hentry, .entry-content, article {
+	/* font-size: 21px; */
+}
+
+.entry-title {
+    margin-top: 0;
+    line-height: 1.2;
+    font-size: 34px;
+    text-transform: capitalize;
+}
+
+.archive-title {
+    font-size: 28px;
+    line-height: 1.2;
+    text-transform: capitalize;
+}
+
+.entry-title a, .archive-title a {
+	color: #24292e;
+}
+
+.entry-title a:hover, .entry-title a:focus, .archive-title a:hover {
+	color: #1e5491;
+}
+
+.entry-content{
+    margin-bottom: 1rem;
+}
+
+.comment-expand {
+    border: 0;
+    font-size: 18px;
+    line-height: 1;
+    padding: 3px 10px;
+    float: right;
+}
+
+.breadcrumb .separator {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+
+/* Widget Styles
+-------------------------------------------------------	*/
+
+.widget {
+	margin-bottom: 1.5rem;
+	font-size: 14px;
+}
+
+.widget-title, .widgettitle {
+	font-size: 17px;
+	margin-bottom: 22px;
+	margin-top: 0;
+	font-weight: 700;
+	position: relative;
+}
+
+#secondary .widget-title:before {
+	content: '';
+	display: block;
+	background: #1e5491;
+	position: absolute;
+	bottom: -8px;
+	width: 40%;
+	height: 1px;
+}
+
+.widget ul {
+	font-size: 16px;
+}
+
+#secondary .widget ul li {
+	border-bottom: 1px solid #ddd;
+	margin-bottom: 12px;
+	padding-bottom: 20px;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 23px;
+}
+
+#secondary .widget ul li:last-child {
+	border-bottom: 0;
+}
+
+.widget, .widget ul li a {
+	color: #2c3644;
+	font-weight: 500;
+}
+
+
+/* Primary Sidebar Styles
+-------------------------------------------------------	*/
+
+#menu-the-best-of-wpdesign > li:before {
+    background-color: #007bff;
+    margin-right: 5px;
+    padding: 0px 8px;
+    content: counter(index, decimal);
+    counter-increment: index;
+    color: #fff;
+}
+
+#menu-the-best-of-wpdesign li:first-child {
+    counter-reset:index;
+}
+
+#menu-the-best-of-wpdesign li {
+    list-style: none;
+}
+
+
+#text-8, #text-7 {
+	background: #d2d9e2;
+	color: #535b67;
+	padding: 20px;
+	padding-bottom: 1px;
+	background: rgba(0, 147, 204, .1);
+	/* background: #f9f9f9; */
+	/* background: #f3f3f3; */
+}
+
+.list-count {
+	background: #1e5491;
+	color: #fff;
+	font-weight: 400;
+	margin: 7px 10px 0 0;
+	float: left;
+	padding: 4px;
+	width: 26px;
+	text-align: center;
+	display: inline-block;
+	vertical-align: top;
+	height: 26px;
+	line-height: 1;
+}
+
+#secondary .widget_mc4wp_form_widget {
+	background: rgba(0, 147, 204, .1);
+	padding: 20px 20px 10px 20px;
+	/* color: #8b95a4; */
+}
+
+#secondary .widget_mc4wp_form_widget .widget-title {
+	/* color: #fff; */
+}
+
+#secondary .widget_mc4wp_form_widget input {
+	background: rgba(0, 147, 204, .1);
+	border: 0;
+	color: #808c9c;
+	height: 40px;
+	width: 100%;
+	text-align: center;
+	/* border: 1px solid #808c9c; */
+}
+
+#secondary .widget_mc4wp_form_widget input[type="submit"] {
+	background: #1e5491;
+	color: #fff;
+}
+
+#secondary .widget_mc4wp_form_widget input[type="submit"]:hover {
+	opacity: .8;
+}
+
+#secondary .widget_mc4wp_form_widget ::-webkit-input-placeholder {
+	color: ##808c9c;
+}
+
+#secondary .widget_mc4wp_form_widget ::-moz-placeholder {
+	color: ##808c9c;
+}
+
+#secondary .widget_mc4wp_form_widget :-ms-input-placeholder {
+	color: ##808c9c;
+}
+
+#secondary .widget_mc4wp_form_widget :-moz-placeholder {
+	color: ##808c9c;
+}
+
+.info-widget-content {
+	background: #d2d9e2;
+	padding: 20px;
+}
+
+.coupon-sdbrr-button {
+	padding: 1.9px 8.34px;
+	display: inline-block;
+	margin-right: 5px;
+	border: 2px solid #2aaae1;
+	text-transform: uppercase;
+	border-radius: 3px;
+	font-size: 13.8px;
+	font-weight: 700;
+	margin-bottom: 7px;
+}
+
+#secondary #s {
+    font-size: 16px;
+    border-radius: 0;
+    height: 40px;
+    padding: 6px 15px;
+    border: 0;
+}
+
+#secondary #searchsubmit {
+
+}
+
+
+/* Footer Styles
+-------------------------------------------------------	*/
+
+#wrapper-footer {
+	background-color: #2c3644;
+	margin-top: 30px;
+	padding-top: 40px;
+	background: #273547;
+}
+
+#wrapper-footer, #wrapper-footer p, #wrapper-footer a {
+	color: #8E99A9;
+	font-size: 14px;
+}
+
+#wrapper-footer .widget ul li {
+	padding-bottom: .2rem;
+}
+
+#wrapper-footer .widget-title {
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 18px;
+	margin-bottom: 15px;
+}
+
+#wrapper-footer .widget_nav_menu ul > li:last-child > a {
+    border-bottom: 1px solid;
+}
+
+.site-info-wrapper {
+	background: #262f3c;
+	padding: 13px 0 0;
+	display: table;
+	width: 100%;
+	/* opacity: .8; */
+}
+
+.site-info-wrapper, .site-info-wrapper p, .site-info-wrapper a {
+	color: #8e99a9 !important;
+	text-align: left;
+}
+
+.site-info {
+	padding-bottom: 30px;
+	text-align: center;
+	padding-top: 24px;
+	border-top: 1px solid #808080;
+}
+
+.footer_icons a {
+	padding-right: 17px;
+}
+
+.footer_icons i {
+	font-size: 15px;
+}
+
+#menu-footer {
+	padding-left: 0;
+}
+
+#menu-footer li {
+	padding-right: 20px;
+	display: inline-block;
+	text-align: left;
+	position: relative;
+}
+
+/* Services Styles
+-------------------------------------------------------	*/
+.services {
+    padding-bottom: 1rem;
+    display: block;
+    text-align: center;
+    position: relative;
+}
+
+.service-or {
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.services .info-btn {
+    display: inline-block;
+}
+
+.services .info-btn a {
+    border: 0;
+    border-radius: 0;
+    font-size: 18px;
+    line-height: 1;
+    padding: 13px 18px;
+}
+
+/* Coupon Styles Archive
+-------------------------------------------------------	*/
+.related-posts {
+    overflow: hidden;
+}
+.related-posts .row {
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.related-posts .col-12 {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.related-content {
+    padding: 15px 20px;
+    background: rgba(0, 147, 204, .1);
+    margin-bottom: 1rem;
+}
+
+.related-posts > h3 {
+    margin-top: 0;
+}
+
+.related-posts .widget-title {
+    padding: 5px 0px;
+    line-height: 1.4;
+    word-spacing: 1px;
+    text-align: center;
+    margin-bottom: 0;
+    padding-top: 0;
+}
+
+.related-content .excerpt {
+    margin-bottom: 20px;
+    height: 73px;
+    overflow: hidden;
+}
+
+.info-btn a, .info-btn a:visited {
+    background: #ea4134;
+    color: #fff;
+    display: block;
+    font-size: 13px;
+    padding: 10px 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 3px;
+    letter-spacing: 1px;
+    border: 2.4px solid #e73e07;
+    transition: all 300ms ease 0s;
+}
+
+.deal {
+    position: absolute;
+    background: #fff;
+    top: 0;
+    right: 0;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 2px 10px;
+    color: #ea4134;
+}
+
+.featured-thumbnail img {
+    margin: 0;
+}
+
+.coupon-wrapper {
+    position: relative;
+}
+
+.coupon-entry {
+    margin-bottom: 30px;
+}
+
+.coupon-entry.hentry {
+    border-bottom: 0 !important;
+}
+
+.coupon-content {
+    padding: 15px 20px;
+    background: rgba(0, 147, 204, .1);
+    overflow: hidden;
+}
+
+.coupon-thumbnail img {
+    margin: 0;
+    width: 100%;
+}
+
+.coupon-title {
+    margin: 0;
+    word-spacing: 1px;
+    font-size: 21px;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+
+.coupon-title a {
+    color: #24292e;
+}
+
+.coupon-content .entry-content {
+    font-size: 18px;
+    height: 82px;
+}
+
+.coupon-entry .coupn-code {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #3598cb;
+    color: #FFF;
+    padding: 9px 20px;
+    border-top-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    text-transform: uppercase;
+}
+
+.footer-coupon {
+    border-top: 1px solid #d7d7d7;
+    padding-top: 5px;
+}
+
+.coupon-entry .footer-coupon a {
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 10px 0px 15px;
+    font-weight: 700;
+}
+
+.coupon-entry .view-deal a {
+    color: #ea4134;
+}
+
+.view_deal_related {
+    margin-left: 10px;
+    float: right;
+}
+
+/* Coupon Styles Single Post
+-------------------------------------------------------	*/
+
+.single-coupons .coupon_thumbnail {
+    
+}
+
+.coupon-header {
+    padding: 8px 20px;
+    background: rgba(0, 147, 204, .1);
+}
+
+.coupon-single-title {
+    display: inline-block;
+    font-size: 32px;
+    margin: 0;
+    margin-bottom: .5rem;
+}
+
+.single-coupons  .coupn-save {
+    font-weight: 700;
+    margin-right: 10px;
+}
+
+.single-coupons .coupon_code_text_link {
+    margin: 0;
+    font-size: 20px;
+    display: inline-block;
+    margin-bottom: .5rem;
+}
+
+.single-coupons .coupon_code_text_link a {
+    background: #f9e76f;
+    padding: 10px 10px;
+    line-height: 1;
+    display: inline-block;
+    font-weight: bold;
+    text-decoration: none;
+    color: #746b32;
+    margin-left: 10px;
+    border-radius: 3px;
+}
+
+.single-coupons .coupon_code_button {
+    overflow: hidden;
+    padding: 2px;
+    display: inline-block;
+    position: relative;
+    text-transform: uppercase;
+    margin-top: .5rem;
+}
+
+.single-coupons .coupon_code_button a {
+    font-size: 14px;
+    line-height: 1.5;
+    padding: 10px 13px 10px 100px;
+    color: #fff;
+    border: 2px dashed #fff;
+    text-decoration: none;
+    font-weight: 700;
+    background: #3598cb;
+    box-shadow: 0 0 0 2px #3598cb;
+    display: inline-block;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    letter-spacing: 1px;
+}
+
+.single-coupons .coupon_code_button .copy-scissors {
+    line-height: 1;
+    background: #f9e76f;
+    padding: 40px 60px 20px;
+    color: #746b32;
+    font-size: 22px;
+    display: initial;
+    position: absolute;
+    left: -40px;
+    top: -20px;
+    -webkit-transform: rotate(-55deg);
+    -moz-transform: rotate(-55deg);
+    -o-transform: rotate(-55deg);
+    -ms-transform: rotate(-55deg);
+    transform: rotate(-55deg);
+}
+
+.single-coupons .entry-content {
+    padding-top: 1.2rem;
+}
+
+.single-coupons .related-posts > h3 {
+    margin-top: .5rem;
+    margin-bottom: 1rem;
+}
+
+.single-coupons  .breadcrumbs {
+    padding-bottom: 1.2rem;
+}
+
+.single-coupons .entry-content ul {
+    padding-left: 20px;
+}
+
+.single-coupons .entry-content li {
+    position: relative;
+    list-style: none;
+    padding-left: 15px;
+    padding-bottom: 5px;
+}
+
+.single-coupons .entry-content li:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 3px;
+    left: 0px;
+    color: #1e5491;
+    font-family: FontAwesome;
+}
+
+
+@media (min-width: 768px) {
+	.coupon-entry .entry-terms {
+		float: left;
+	}
+	.coupon-entry .view-deal {
+		float: left;
+	}
+	.coupon-entry .get-deal {
+		float: right;
+	}
+}
+
+@media (max-width: 991px) {
+	.coupon-entry .coupn-code {
+		padding: 4px 20px;
+		font-size: 14px;
+	}
+}
+
+@media (max-width: 767px) {
+	.footer-coupon span {
+		display: block;
+	}
+	.coupon-entry .coupn-code {
+		padding: 4px 20px;
+		font-size: 14px;
+	}
+	.single-coupons .coupon_code_text_link {
+		display: block;
+		margin-bottom: .5rem;
+		margin-top: .5rem;
+	}
+	.single-coupons .coupon_code_text_link a {
+		margin-left: 0;
+	}
+}
+
+/* Our Services Page
+-------------------------------------------------------	*/
+#services .broken_link, a.broken_link {
+    text-decoration: none !important;
+}
+
+.service-heading {
+    padding-top: 1rem;
+}
+
+.service_sub_heading {
+    line-height: 1.4;
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 1rem;
+}
+
+
+.feature_title i {
+    padding-right: 7px;
+}
+.feature_title > h3 {
+    margin-top: 1rem;
+}
+
+#services > div > h2 {
+    padding-top: 1rem;
+    padding-bottom: .5rem;
+}
+
+.our_services .icon {
+    border-radius: 100%;
+    width: 68px;
+    height: 68px;
+    border: 2px solid #1e5491;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.our_services .fa {
+    font-size: 34px!important;
+    line-height: 64px!important;
+    color: #1e5491!important;
+}
+
+.service-item {
+    padding: 20px 20px 20px 20px;
+    margin-bottom: 1rem;
+    border: 3px solid #1e5491;
+}
+
+.service-item h3 {
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.service-item p {
+    font-size: 18px;
+    text-align: center;
+    color: #1e5491;
+}
+
+/* Additional Fixes
+-------------------------------------------------------	*/
+
+.yarpp-related a {
+	font-weight: 500 !important;
+}
+
+.yarpp-related abbr {
+    display: none !important;
+}
+
+.cs-share {
+	display: inline-block;
+}
+
+.cs-share .share-text {
+	display: none !important;
+}
+
+.cs-share .ssba a {
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 1.1;
+	margin-top: -3px;
+}
+
+.cs-share .ssba img {
+	padding-top: 0;
+}
+
+.ssba, .ssba a {
+	font-family: inherit !important;
+	font-weight: 500 !important;
+}
+
+.ssba img {
+	margin: 0;
+	padding-top: 0 !important;
+}
+
+body .syntaxhighlighter {
+    font-size: 18px !important;
+}
+body .syntaxhighlighter code {
+    font-size: 18px !important;
+}
+.syntaxhighlighter table td.code .container {
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+}
+
+
+/* Bootstrap Fixes
+-------------------------------------------------------	*/
+.btn-primary {
+	background-color: #1e5491;
+	border-color: #1e5491;
+}
+
+.btn-primary:hover {
+	background-color: #1494b2;
+	border-color: #1494b2;
+	opacity: .8;
+}
+
+.btn {
+	border-radius: 0;
+}
+
+.btn.focus, .btn:focus {
+	box-shadow: none !important;
+}
+
+#submit .btn-secondary {
+	color: #fff;
+	background-color: #2d3e50;
+	border-color: #2d3e50;
+}
+
+.form-control:focus {
+	border-color: #2aaae1;
+}
+
+
+/* Responsive Styles
+-------------------------------------------------------	*/
+
+@media (min-width: 768px) {
+	#primary {
+		padding-right: 4%;
+	}
+	#text-2 {
+		padding-right: 20px;
+	}
+	.sm-custom ul {
+		background: #1e5491;
+		background-image: -webkit-linear-gradient(316.9deg,#006be6 0,#3895ff 61.26%,#2fceff 100%);
+		background-image: -moz-linear-gradient(316.9deg,#006be6 0,#3895ff 61.26%,#2fceff 100%);
+		background-image: -o-linear-gradient(316.9deg,#006be6 0,#3895ff 61.26%,#2fceff 100%);
+		background-image: linear-gradient(133.1deg,#006be6 0,#3895ff 61.26%,#2fceff 100%);
+	}
+	.sm-custom a span.sub-arrow {
+		border-color: #fff transparent transparent;
+	}
+	.sm-custom ul a {
+		color: #fff;
+		font-size: 14px;
+	}
+	.sm-custom .sub-menu {
+		padding-top: 10px;
+		margin-top: 22px !important;
+	}
+}
+
+@media (min-width: 576px) {
+	.service-item {
+		min-height: 320px;
+	}
+}
+
+@media (max-width: 991px) {
+	#masthead {
+		padding-top: 7px;
+		padding-bottom: 7px;
+	}
+	.custom-logo {
+		width: 100%;
+		padding-top: 5px;
+		padding-bottom: 8px;
+		max-width: 180px;
+	}
+	.entry-meta > span {
+		padding-right: 2%;
+		font-size: 12px;
+	}
+	.cs-share .ssba img {
+		width: 33px !important;
+	}
+}
+
+@media (max-width: 767px) {
+	.custom-logo {
+		width: 100%;
+		padding-top: 5px;
+		padding-bottom: 8px;
+		max-width: 180px;
+	}
+	#primary {
+		margin-bottom: 2rem;
+	}
+	.site-info-wrapper, .site-info-wrapper p, .site-info-wrapper a {
+		text-align: center;
+	}
+	#menu-footer li {
+		padding-right: 10px;
+		text-align: center;
+		padding-bottom: 3px;
+		padding-top: 3px;
+	}
+	#wrapper-footer {
+		margin-top: 5%;
+		padding-top: 7%;
+	}
+}
+
+@media (max-width: 575px) {
+	.entry-meta {
+		font-size: 12px;
+	}
+	.entry-content, .entry-content p {
+		font-size: 18px;
+	}
+	.posted-on, .byline {
+		padding-right: 3%;
+	}
+	.comments-link {
+		padding-right: 0;
+	}
+	.cs-share {
+		display: none;
+	}
+	#wrapper-footer .container-fluid {
+		padding-left: 7%;
+		padding-right: 7%;
+	}
+}
+
+
+/* Responsive Typography
+-------------------------------------------------------	*/
+
+@media (max-width: 1200px) {
+	h1, .h1, .coupon-single-title {
+		font-size: 1.85rem;
+	}
+	h2, .h2 {
+		font-size: 1.65rem;
+	}
+}
+
+@media (max-width: 1023px) {
+	h1, .h1, h2, .h2, h3, .h3, h4, .h4, .entry-title, .archive-title, .coupon-single-title {
+		font-size: 1.7rem;
+	}
+}
+
+@media (max-width: 767px) {
+	h1, .h1, h2, .h2, h3, .h3, h4, .h4, .entry-title, .archive-title, .coupon-single-title {
+		font-size: 1.7rem;
+	}
+}
+
+@media (max-width: 575px) {
+	h1, .h1, h2, .h2, h3, .h3, h4, .h4, .entry-title, .archive-title, .coupon-single-title {
+		font-size: 24px;
+	}
+}

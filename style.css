@@ -1,0 +1,32 @@
+/*
+Theme Name: Unmarked
+Theme URI: http://wpunmarked.com/unmarked
+Author: Jihan Ahmed
+Author URI: http://wpunmarked.com
+Description: Combination of best practices for WordPress starter theme. Made as a solid starting point for your next theme project and WordPress website. Including Font Awesome support and much more you need for basic websites.
+Version: 0.0.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: unmarked
+Tags: custom-menu, featured-images, flexible-header, sticky-post, theme-options, translation-ready
+*/
+
+/*This file is just used to identify the theme in WordPress. The compiled CSS output can be found in /css/theme.css
+*/
+
+@media (min-width: 481px) and (max-width: 575px) {
+	.col-cs-6 {
+		-webkit-box-flex: 0;
+		-webkit-flex: 0 0 50%;
+		-ms-flex: 0 0 50%;
+		flex: 0 0 50%;
+		max-width: 50%;
+	}
+	.col-cs-6 {
+		position: relative;
+		width: 100%;
+		min-height: 1px;
+		padding-right: 15px;
+		padding-left: 15px;
+	}
+}
